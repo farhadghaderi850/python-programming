@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Myapps</title>
+</head>
+<body>
+
+    <ul>
+    {% for m in myapps %}
+        <li><a href="/myapps/{{ m.pk }}/">{{ m.pk }}- {{ m.title }}</a></li>
+    {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myapp detail</title>
+</head>
+<body>
+
+
+        <h1>{{ myapp.title }}</h1>
+        <p>{{ myapp.description }}</p>
+
+        <ul>
+            {% for c in comments %}
+            <li>
+                {{ c.text }}, {{ c.pub_date }}
+            </li>
+            {% endfor %}
+
+        </ul>
+
+</body>
+</html>
